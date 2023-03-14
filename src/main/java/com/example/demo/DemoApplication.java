@@ -25,6 +25,7 @@ public class DemoApplication {
 				int number = resultSet.getInt("number");
 				System.out.println("Number: " + number);
 			}
+
 			// Writing to the 'test' table
 			query = "INSERT INTO test (number) VALUES (?)";
 			statement = connection.prepareStatement(query);
